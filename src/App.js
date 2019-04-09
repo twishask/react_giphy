@@ -29,7 +29,7 @@ class App extends Component {
   
   callGiphy = e => {
     e.preventDefault()
-    fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
+    fetch('https://api.giphy.com/v1/gifs/trending?api_key=JYslkGeco8QJ6gAUF3hRIpQSltMs0hsF&limit=25&rating=G')
       .then((result) => {
         return result.json();
       }).then((jsonResult) => {
