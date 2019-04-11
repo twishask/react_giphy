@@ -74,7 +74,7 @@ class App extends Component {
     
   trending = e => {
     e.preventDefault()
-    fetch('https://api.giphy.com/v1/gifs/trending?api_key=JYslkGeco8QJ6gAUF3hRIpQSltMs0hsF&limit=50&rating=G')
+    fetch('https://api.giphy.com/v1/gifs/trending?api_key=JYslkGeco8QJ6gAUF3hRIpQSltMs0hsF&limit=75&rating=G')
       .then((result) => {
         return result.json();
       }).then((jsonResult) => {
@@ -84,7 +84,7 @@ class App extends Component {
           array[i] = data[i].images.fixed_height.url;
         }
         this.setState ({
-          data: array,
+          trending: array,
           })
       }) 
   }
@@ -97,9 +97,7 @@ class App extends Component {
       <button onClick={this.search}>Search</button>
       <br></br>
       <input type="button" value="Random from GIPHY" onClick={this.random} />
-      <br></br>
       <input type="button" value="Reverse the order" onClick={this.reverse} />
-      <br></br>
       </form>
       {this.state.data.map(gif => {
           return(

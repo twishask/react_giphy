@@ -5,8 +5,8 @@
 }
 
 img {
-  margin: 8px;
-  border: 8px;
+  margin: 5px;
+  height: 210px
 }
 
 input[type=button] {
@@ -17,3 +17,26 @@ input[type=button] {
   font-size: 15px;
 }
 
+input[type=text] {
+  border: 5px;
+  margin: 8px;
+  height: 35px;
+  width: 430px;
+  font-size: 15px;
+}
+
+button {
+  border: 5px;
+  margin: 8px;
+  height: 35px;
+  width: 100px;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: verdana;
+  text-align: left;
+  padding-left: 20px;
+  color:  purple;
+}
